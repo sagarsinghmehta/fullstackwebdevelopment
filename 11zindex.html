@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+      /* hidden-extra content gayab 
+            clip - extra content cut ho jayega
+              scroll- content bna rhega  */
+
+        .para{
+            /* overflow: hidden; */
+            /* overflow: clip; */
+            /* overflow: scroll; */
+            overflow: auto;
+            border: 10px solid black;
+            background-color: #0fc796;
+            padding: 20px;
+            height: 100px;
+        }
+
+        /* .........styling for z-index........... */
+        .container{
+            position: relative;
+        }
+
+        .box{
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            font-size: 20px;
+            color: #f1f4e5;
+        }
+
+        .box_1{
+            background-color: red;
+            z-index: 1;  
+        }
+        .box_2{
+            background-color: green;
+             z-index: 2;
+             top: 50px;
+             left: 50px;
+        }
+        .box_3{
+            background-color: blue;
+             z-index: 3;
+             top: 100px;
+             left: 100px;
+        }
+        /* ...........jiska z-index jyada hoga wo overlap karega....... */
+        /* (top & left) dena isliye jroori hai kyuki (container= relative),(box=absolute) positioning di hai */
+    </style>
+</head>
+<body>
+<p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus labore vero consectetur. Ipsam nemo dolorum voluptatem quae odio, adipisci nostrum maiores odit iste aperiam incidunt, eligendi obcaecati neque consectetur tempora beatae exercitationem. Cumque itaque fugit doloremque quia, totam corporis quam tempore sapiente natus soluta aspernatur non. Consectetur quidem ab quis fuga itaque officia eius impedit exercitationem accusamus voluptatum veritatis dicta repellat doloribus eos corrupti est laborum, modi laudantium nostrum! Possimus, veritatis quaerat doloribus dolore dicta, adipisci animi non, excepturi eligendi officia necessitatibus beatae labore blanditiis iure. Consequuntur quaerat debitis illo, molestias magni nam iusto ea? Dolorem cupiditate unde debitis minima eius porro voluptatem accusantium quos quisquam aperiam! Voluptas odio animi facere illum in optio cupiditate architecto sequi unde beatae vitae ut, ex dignissimos minima omnis magni nulla! Eum corporis, soluta fugit voluptatum earum velit optio! Maiores quia asperiores nulla possimus similique a quibusdam. Nesciunt rem earum a quae, veniam, modi quibusdam itaque non deserunt dolores provident omnis fugit error, amet ut placeat delectus! Commodi obcaecati sint quas est impedit quos dicta temporibus, numquam veniam ullam delectus tempora cumque illum rerum, soluta iste fugit asperiores distinctio inventore fuga quisquam consectetur fugiat. Nisi laborum quae amet maiores dolore numquam veniam nostrum. Ipsa nostrum accusamus natus, veniam magnam hic deleniti! Magnam aliquam sequi dolores doloribus? Voluptate eius explicabo maxime quasi asperiores quos corrupti repudiandae? Cupiditate sequi aperiam, laudantium eum sit, laborum rerum, autem itaque minima aliquam labore. Sunt, ratione suscipit est dolorem aperiam assumenda deleniti eius odio aut maxime sint minima tenetur explicabo non nam inventore at, adipisci corporis laborum libero aliquid natus reiciendis doloremque. Neque fugit eveniet vero voluptatum eligendi, recusandae rem vel animi eum esse. Consequuntur possimus facilis maiores cum eveniet dolores sit non totam molestiae rerum exercitationem vero ea at, culpa voluptates impedit magnam aliquid id. A mollitia assumenda reiciendis!</p>
+
+
+    <!-- content for z-index -->
+     <div class="container">
+         <div class="box box_1">z-index 1</div>
+         <div class="box box_2">z-index 2</div>
+         <div class="box box_3">z-index 3</div>
+     </div>
+    
+</body>
+</html>

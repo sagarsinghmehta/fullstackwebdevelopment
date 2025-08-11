@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector</title>
+    <style>
+        /* universal selector */
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+        /* type selector */
+        h1 {
+            background-color: #f41313;
+        }
+        /* class selector */
+    .bg-orange {
+        background-color: #c77d07;
+    }
+        /* id selector */
+        #bg-green {
+            background-color: #045d10;
+        }
+        /* IMPORTANT= id aur class main id ki specificity jyada hoti hai */
+
+        a[target=_blank] {
+            background-color: #7308c5;
+            color: #a2c6a7;
+        }
+
+        /* ul ke andar aane waale li ko select karne ke liye  */
+        ul li{
+            background-color: #05a3b8;
+        }
+
+        /* h4 h5 h6 teeno ko ek saath select karne ke liye */
+        h4, h5, h6 {
+            background-color: #b4b407;
+        }
+
+        /* > ye waala sign sirf child ko secect karne ke liye use hota hai */
+        header > a{
+            background-color: #cb139a;
+        }
+
+        /* ~ waaala sign adjecant siblings ko select karta hai */
+        img ~ p{
+            background-color: #43ed65;
+        }
+
+        /* + waala sign JUST ADJCENT siblings ko select karne ke kam aata hai */
+        a + p{
+            background-color: #c81010;
+        }
+    </style>
+</head>
+<body style="background-color: #8e9092;">
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <h2 class="bg-orange">Lorem ipsum dolor sit amet.</h2>
+    <h3 id="bg-green">Lorem ipsum dolor sit amet.</h3>
+
+    <a target="_parent" href="https://pwskills.com">PW SKILLS</a>
+    <a target="_blank" href="https://ineuron.ai">INEURON</a>
+
+    <ul>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+    </ul>
+    <li>four</li>
+
+    <h4>Lorem ipsum dolor sit amet.</h4>
+    <h5>Lorem ipsum dolor sit amet.</h5>
+    <h6>Lorem ipsum dolor sit amet.</h6>
+
+    <header>
+        <a href="#">google</a>
+        <nav>
+            <ul>
+                <li>home</li>
+                <a href="#">logo</a>
+            </ul>
+        </nav>
+        <a href="#">bing</a>
+
+
+        <div>
+            <img src="#" alt="">
+            <p>change me</p>
+            <p>chznge me too</p>
+            <div>
+                <p>change me three</p>
+            </div>
+            <p>change me four</p>
+        </div>
+
+        <nav>
+            <a href="@">lenovo</a>
+            <p>i am first sibling</p>
+            <p>i am second sibling</p>
+        </nav>
+    </header>
+</body>
+</html>

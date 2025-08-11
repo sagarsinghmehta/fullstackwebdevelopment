@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector advance</title>
+    <style>
+h1:hover {
+    background-color: #40ec68;  
+}
+
+input:disabled{
+    background-color: #c80e0e;
+}
+
+div :first-child{
+    background-color: #13b120;
+}
+div :last-child{
+    background-color: #10d766;
+}
+div :nth-child(2n){
+    background-color: #d9d025;
+}
+/* special ***                   >>pseudo selector ke liye :: lagate hain */
+h2::after{
+    content: "After!";
+    color: #f93d3d;
+}
+h3::before{
+    content: "Before!";
+    color: aqua;
+    font-size: 100px;
+}
+p::first-letter{
+    background-color: #35d02d;
+    font-size: 200px;
+}
+    </style>
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit amet.</h1>
+<input type="button" value="submit" disabled="true">
+    <!-- <input type="text" disabled="true"/> -->
+
+    <div>
+        <ul>one</ul>
+        <ul>two</ul>
+        <ul>three</ul>
+    </div>
+
+
+    <h2>psudo after and before selector</h2>
+    <h3>first letter selector</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam accusantium doloremque rerum!Sed modi consequatur repudiandae similique dolore harum consequuntur.</p>
+</body>
+</html>

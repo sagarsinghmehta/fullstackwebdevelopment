@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .button{
+            --color:green;          /* (--color) =declare green color as variable.*/
+            padding: 0.5rem;
+            border: 1px solid var(--color);         /* instead of green color we can use var(--color)*/
+            color: var(--color);
+        }
+        
+        .button:hover{
+            --color:blue;
+        }
+        
+        .btn_red{
+            --color:red;                /* .btn_red class ke andar jo (--color) variable hai uska color red kr do*/
+        }
+
+       
+        .container{
+            width: calc(100% - 200px);          /* (100% width) m se 200px minus krega*/
+            height: 50vh;
+            background-color:blue;
+            margin-top: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <a href="#" class="button">Button green</a>
+    <a href="#" class="button btn_red">Button REd </a>
+    <a href="#" class="button">Button hover on</a>
+
+
+    <!-- ----------SECOND TOPIC---------- -->
+     <div class="container"></div>
+</body>
+</html>

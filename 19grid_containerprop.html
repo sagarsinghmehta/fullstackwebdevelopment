@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid container properties</title>
+</head>
+<style>
+    .container {
+    grid-gap: 10px;
+  display: grid;
+  height: 400px;
+  /* grid-template-columns: auto auto auto; */
+  /* grid-template-columns:50px 40px 60px; */
+  grid-template-columns: repeat(3, 1fr);
+  /*------------------------------(repeat(3, 1fr) 3part m divide krega 1-1 ke fraction m---------------------  */
+  grid-template-rows:100px 400px ;
+}
+
+.item {
+  background-color: #ccc;
+  border: 1px solid #333;
+  padding: 10px;
+}
+</style>
+<body>
+    <div class="container">
+        <div class="item item1">item 1 </div>
+        <div class="item item2">item 2 </div>
+        <div class="item item3">item 3 </div>
+        <div class="item item4">item 4</div>
+        <div class="item item5">item 5 </div>
+        <div class="item item6">item 6 </div>
+    </div>
+    
+</body>
+</html>
