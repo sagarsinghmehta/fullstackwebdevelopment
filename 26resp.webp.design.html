@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive webpage design</title>
+    <style>
+        /* ------------(max-width:576px)= means jab tak screen size 576px se kam hoga tab tak uske andar ki property work kregi--------- */
+      
+        @media screen and (max-width: 400px){
+            .box{
+                background-color: #18b6d5;
+            }
+        }
+
+        @media screen and (min-width: 576px){
+            .box{
+                background-color: #05610b;
+            }
+        }
+        @media screen and (min-width: 768px){
+            .box{
+                background-color: #053f7d;
+            }
+        }
+        @media screen and (min-width: 1200px){
+            .box{
+                background-color: #abb606;
+            }
+        }
+        /* [576 ya usse uppar green]--------[768 ya usse uppar blue]-----------[1200 ya usse uppar yellow] */
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1 class="screen">width</h1>
+    </div>
+
+
+
+    <p> FOR CHECKING (RIGHT CLICK -> INSPECT -> SCREEN KO BADA CHOTA KREN)</p>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1, h2, h3, p, ol {
+            /* display: block; */
+            background-color: #200581;
+            color: aliceblue;
+            padding: 10px;
+            border: 5px solid yellow;
+        }
+        .item{
+        /* display:inline; */                 /* item 2 will not show the block property bcs. item as a whole has [display:inline;] */
+            display:block;                           /* In [display block] item2  shows the block property */
+            /* display: inline-block; */        /*  item2 shows (block property) because it is inline element as a whole */
+            background-color: #460303;
+            color: aliceblue;
+            padding: 10px;
+            border: 5px solid yellow;
+        }
+        .item2{
+            height: 100px;
+        }
+
+  .                                     /* {HEADING}==display NONE , opacity 0, visibility 0 */
+        img {
+            /* display: none; */
+                                                           /* display none main space cosume nahi hota hai */
+            /* opacity: 0; */
+                                                             /* opacity:0; main space consume hota hai */
+            visibility: hidden;
+                                                                  /* visibility: hidden; main bhi space consume hota hai */
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>normal layout</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt eligendi sint et eaque non tempore. A aliquam esse tempore ad quam quo quibusdam architecto, adipisci voluptates laboriosam, assumenda id, quidem modi nulla earum facere temporibus delectus fuga accusantium vitae fugit beatae saepe. Quo quaerat molestias deleniti corporis quisquam odio. Temporibus!</p>
+    
+    <ol>
+    <li>item 1 </li>
+    <li>item 2</li>
+    <li>item 3</li>
+</ol>
+<div>
+    <div class="item1 item">item 1</div>
+    <div class="item2 item">item2 </div>
+    <div class="item3 item">item3 </div>
+
+</div>
+    <h2> FOR EXPLAINING (DISPLAY NONE , OPACITY 0, VISIBILITY 0)</h2>
+    <img src="./dominar400.jpg" height="300px" width="300px" alt="">
+    <h3>the additional heading for showing impact of h2</h3>
+</body>
+</html>

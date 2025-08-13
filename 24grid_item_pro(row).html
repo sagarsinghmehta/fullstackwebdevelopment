@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid item properties</title>
+    <style>
+ .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);                   /* ----3 column hain (means-4 point)----*/
+  grid-template-rows: repeat(3, 100px);                   /* ----3 ROWS hain (means-4 point)----*/
+  grid-gap: 10px;
+  border: 1px solid brown;
+}
+
+.item {
+  background-color: #ccc;
+  border: 1px solid #333;
+  padding: 10px;
+  font-size: 20px;
+}
+.item1 {
+  grid-row-start: 1;                                      /* first column M row ke first point se start*/
+  grid-row-end: 4;                                        /* first column m hi row ke 4th point tk(means last row)*/
+                                                            /*---yha first column bhar gya hai bcs.3 hi rows hain ( means 4 point)*/
+}
+.item2 {
+  grid-row-start: 1;                                      /* 2nd column ke row 1st se 2nd point tk*/
+  grid-row-end: 2;                                     
+}
+.item3 {
+  grid-row-start: 2;                                /* only 2nd row.......(grid-row-end: ;) nhi define kiya hai to next point tk cover krega.*/
+}
+.item4 {
+  grid-row-start: 3;
+  grid-row-end: 4;                                           /*   2nd row end here */
+   /* grid-row: 3/4; */                                /*--------shorthand notation hai----------*/
+}
+.item5 {
+  grid-row-start: 2;                                      /* 3rd column ke row-wise 2nd point se start*/
+    grid-row-end: 4;                                    /*4th point tk */
+}
+.item6 {
+  grid-row-start: 1;                                      /* 3rd column ke row-wise first point se start - 2nd point tk (maens 1st row)*/
+  grid-row-end: 2;   
+}                                     
+    </style>
+</head>
+<body>
+    <div class="container">
+  <div class="item item1">Item 1 <br> (start:1, end:4)</div>
+  <div class="item item2">Item 2 <br> (start:1, end:2)</div>
+  <div class="item item3">Item 3 <br> (start:2)</div>
+  <div class="item item4">Item 4 <br> (start:3, end:4)</div>
+  <div class="item item5">Item 5 <br> (start:2, end:4)</div>
+  <div class="item item6">Item 6 <br> (start:1, end:2)</div>
+</div>
+</body>
+</html>

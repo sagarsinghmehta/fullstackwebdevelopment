@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+       
+        .box{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: #5007b5;
+            border-radius: 50%;
+            /* [animation : animation-name, animation-duration, animation-timing-function, animation-delay, animation-iteration-count, animation-direction] */
+
+            animation: move 3s linear 1s infinite alternate ;
+            /* animation: move 3s ease-in 0s 3 forwards ; */
+            /* animation: move 3s ease-in-out 0s 3 alternate-reverse ; */
+        }
+        .box1{
+            animation: move 1s ease-in-out 0s infinite alternate;
+            top: 100px;
+            text-align: center;
+            color: aliceblue;
+        }
+        .box2{
+            animation: move 1s ease-in-out 0s infinite alternate-reverse;
+            top: 200px;
+            text-align: center;
+            color: aliceblue;
+        }
+        .box3{
+            animation: move 3s ease-in-out 0s 3 reverse;
+            top: 300px;
+            text-align: center;
+            color: aliceblue;
+        }
+       
+        @keyframes move{
+            from{
+                left: 200px
+            }
+
+            to{
+                left: 0px
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">box</div>
+    <div class="box box1">box1</div>
+    <div class="box box2">box2</div>
+    <div class="box box3">box3</div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexitem</title>
+    <style>
+        .container{
+            display: flex;
+            /* flex-direction: row; */
+            border: 1px solid brown;
+            color: aliceblue;
+            height: 100px;
+        }
+        .item{
+            width: 200px;
+            height: 50px;
+            background-color: #0946ad;
+            border: 1px solid black;
+            text-align: center;
+        }
+        .item-1{
+            order: 2;                   /* order: ; se manually position change kr sakte hain*/
+            align-self: center;         /* apne ko container ke center m laayega bcs. (align) hamesa vertically kaam krta h*/
+        }
+        .item-2{
+            order: 4;
+            flex-grow: 2;               /* flex-grow: ; = baaki bachi hui jagah ko le lete hai */
+        }
+        .item-3{
+            order: 3;
+            flex-shrink: 0;             /* means browser ko shrink krne pr BOX-3 utna hi rhega*/
+        }
+        .item-4{
+            order: 1;
+            flex-grow: 1;            
+    /* ............................. jiska flex-grow ratio jyada hoga usko jyada space allocate hogi (ratio ke according)*/
+       /*  flex-basis: 40px; */             /*total ka 40px mujhe dedo baaki sab m baat do */
+        }
+
+    </style>
+</head>
+<body>
+     <div class="container ">
+        <div class="item item-1 ">BOX-1</div>
+        <div class="item item-2">BOX-2</div>
+        <div class="item item-3">BOX-3</div>
+        <div class="item item-4">BOX-4</div>
+           </div>
+
+
+
+<!-- ------------------------------------------------CSS CHEATSHEET ------------------------------------------------------>
+         <h1>  <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">CSS FLEXBOX CHEATSHEET</a> </h1>
+</body>
+</body>
+</html>

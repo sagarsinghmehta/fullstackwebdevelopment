@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gradient</title>
+    <style>
+        .box1{
+            height: 400px;
+            width: 800px;
+            background-image: linear-gradient(to top, pink, purple, violet);
+            /* background-image: linear-gradient(to bottom, pink, purple, #05609c); */
+            /* background-image: linear-gradient(to right, pink, purple, #7dc009); */
+            /* background-image: linear-gradient(to top right, pink, purple, #9e520a); */
+        }
+        .box2{
+            height: 400px;
+             width: 800px;
+
+            background-image: radial-gradient( pink, purple, #9e520a);
+            /* background-image: radial-gradient(circle, pink, purple, #9e520a); */
+            /* background-image: radial-gradient( pink 100px, purple 200px, #9e520a 400px); */
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">BOX 1</div>
+    <div class="box2">BOX 2</div>
+</body>
+</html>

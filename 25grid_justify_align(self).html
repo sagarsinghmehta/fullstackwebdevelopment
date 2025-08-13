@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>justify & align (self)</title>
+    <style>
+ .grid-container {
+  color: #fcf2f2;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 100px);
+  border: 2px solid red;
+  /* grid-gap: 10px; */
+}
+.grid-item {
+  background-color: #373636;
+  padding: 20px;
+  text-align: center;
+}
+.grid-item:nth-child(2) {
+  justify-self: end;
+}
+.grid-item:nth-child(3) {
+  align-self: end;
+}
+.grid-item:nth-child(4) {
+  justify-self: center;
+  align-self: center;
+}
+.grid-item:nth-child(5) {
+  justify-self: start;
+  align-self: end;
+}
+.grid-item:nth-child(6) {
+  justify-self: end;
+  align-self: start;
+}
+
+.bg-blue {
+  background-color: blue;
+}
+.bg-red {
+  background-color: red;
+}
+.bg-orange {
+  background-color: orange;
+}
+.bg-green {
+  background-color: green;
+}
+.bg-black {
+  background-color: black;
+}
+.bg-gray {
+  background-color: gray;
+}
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+      <div class="grid-item bg-blue">(1)none</div>
+      <div class="grid-item bg-red">(2)justify-self:   end</div>
+      <div class="grid-item bg-orange">(3)align-self: end</div>
+      <div class="grid-item bg-green">
+       (4) justify-self: center; <br />
+        align-self: center;
+      </div>
+      <div class="grid-item bg-black">
+        (5)justify-self: start; <br />
+        align-self: end;
+      </div>
+      <div class="grid-item bg-gray">
+        (6)justify-self: end; <br />
+        align-self: start;
+      </div>
+    </div>
+
+
+
+
+
+    <p>Items jis order m HTML m define hain wo usi order m horizontly(first row, second row.... m) position lenge <br>
+    But (justify-self: ;) and (align-self: ;) property ke dwara unke alignment ko unki hi jgah pr(uppar, niche, right, left) khiskaya jaa skta hai </p>
+    <h1> (yha 2 ROWS & 3 COLUMNs hain)</h1>
+</body>
+</html>

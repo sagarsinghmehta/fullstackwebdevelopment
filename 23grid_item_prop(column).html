@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid item properties</title>
+    <style>
+ .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);                    /*----3 column hain (means-4 point)----*/
+  grid-gap: 10px;
+}
+
+.item {
+  background-color: #ccc;
+  border: 1px solid #333;
+  padding: 10px;
+}
+.item1 {
+  grid-column-start: 1;                                      /* first point se start*/
+  grid-column-end: 3;                                        /* third point tk (1____2____3____4) {third column include nhi hai}*/
+}
+.item2 {
+  grid-column-start: 3;                                      /* third point se next point tk (means 3rd column)*/
+}
+.item3 {
+  grid-column-start: 1;                                /* only first column.......(grid-column-end: ;) nhi define kiya hai to next point tk cover krega.*/
+}
+.item4 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  /* grid-column: 2/4; */                                   /*--------shorthand notation hai----------*/
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+  <div class="item item1">Item 1</div>
+  <div class="item item2">Item 2</div>
+  <div class="item item3">Item 3</div>
+  <div class="item item4">Item 4</div>
+</div>
+</body>
+</html>

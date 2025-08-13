@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .float-div {
+            float: left;
+            /* when we apply [float:left] the other content(chahe wo <p> ke bahar ka ho ya andar) will shift right to the (main block) automatically */
+            height: 170px;
+            width: 170px;
+            background-color: #4d0303;
+            color: aliceblue;
+            text-align: center;
+            margin-left: 20px;
+        }
+
+      /* SECOND TOPIC CONTENT */
+        .float-left {  
+            float: left;
+            height: 170px;
+            width: 170px;
+            background-color: #4d0303;
+            color: aliceblue;
+            border: 15px solid black;
+            text-align: center;
+            margin-left: 20px;
+
+        }
+        .float-right {
+            float: right;
+            height: 250px;
+            width: 170px;
+            background-color: #33047e;
+            color: #dae1e7;
+            text-align: center;
+            margin-right: 100px;
+        }
+        .para {
+            clear: right;
+            /* means it will display the content after the right box.  we can also say clear: both; */
+        }
+    </style>
+</head>
+<body>
+    <!-- <p>
+        <div class="float-div">main block</div>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, odit magnam repellendus commodi ipsam placeat molestiae beatae. Nulla, laboriosam velit.
+    </p> -->
+
+
+
+
+    <!-- IT IS THE CONTENT FOR SECOND TOPIC [FLOAT LEFT & RIGHT TOGETHER] -->
+
+    <div class="float-left">LEFT</div>
+    <div class="float-right">RIGHT</div>
+    <p class="para">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse totam exercitationem assumenda perspiciatis soluta animi reiciendis distinctio temporibus quibusdam adipisci. Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto at explicabo quibusdam tempora voluptate numquam delectus dolores cupiditate molestiae nobis.
+    </p>
+    
+</body>
+</html>

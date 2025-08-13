@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>positioning in html</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            height: 300px;
+            width: 800px;
+            position: relative;
+            overflow: scroll;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            border: 2px solid black;
+            background-color: #bee46a;
+        }
+        
+        .box1{
+            background-color: #bf0d0d;
+        }
+
+ /*(relative)top element se 50px ka gap create kro */   
+        /* .box2{
+            background-color: #077e05;
+            position: relative;
+            top: 50px;                                      
+        } */
+        
+/* (absolute-position) m top,left,right,bottom waale ko dhak dega  */
+        /* .box2{
+            background-color: green;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+
+        } */
+
+/* (fixed-position) m jo value di hai(top,left)se utni distance leke fix ho jayega */
+/* BUT PARENT(container) KO {POSITION-RELATIVE} & {OVERFLOW-SCROLL} DENA JAROORI HAI */
+        /* .box2{
+            background-color: green;
+            position: fixed;
+            top: 50px;
+            left: 50px;
+
+        } */
+
+/*(sticky-position)m distance (top:50px) lene se pahle tk move hoga distance cover hone ke baad fix ho jayega  */
+/* BUT PARENT(container) KO {POSITION-RELATIVE} & {OVERFLOW-SCROLL} DENA JAROORI HAI */
+        .box2{
+            background-color: green;
+            position: sticky;
+            top: 50px;
+            left: 100px;
+
+        }
+        
+        
+        
+        .box3{
+            background-color: #0a07d1;
+        }
+        </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+        <div class="box box5"></div>
+    </div>
+   <!-- STYLE m (box2) ek time pr ek hi uncomment kro -->
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid auto flow</title>
+    <style>
+.container1 {
+    height: 100px;
+    width: 800px;
+  display: grid;
+   grid-template: repeat(4, 1fr) / repeat(2, 1fr);                      /*(4, 1fr)= four ROWS.________(2, 1fr)=>two COLUMN. */
+   grid-auto-flow: column;                                              /* filling pahle 1st column m hogi (4, 1fr) */
+}
+.container2 {
+    height: 100px;
+    width: 800px;
+  display: grid;
+   grid-template: repeat(4, 1fr) / repeat(2, 1fr);                          /*(4, 1fr)=> four ROWS.________(2, 1fr)=> two COLUMN. */
+   grid-auto-flow: row;                                                      /* filling pahle row m hogi (jisme sirf 2 hi column hain)*/
+}
+.container1 > div, .container2 > div{
+border:1px solid rgb(197, 183, 183);
+background-color: #510779;
+text-align: center;
+color: aliceblue;
+}
+    </style>
+</head>
+<body>
+    <div class="container1">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+
+</div>
+<hr />
+<div class="container2">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+</div>
+</body>
+</html>
